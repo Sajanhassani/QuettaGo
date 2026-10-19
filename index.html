@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuettaGo - Quetta's #1 Super App | Food Delivery, Parcels & Rides</title>
+  <meta name="description" content="QuettaGo is Quetta's all-in-one super app offering authentic Food Delivery (Sajji, Rosh), Express Parcel Pickup & Drop, and Safe Ride Booking across Quetta, Pakistan. Download on Google Play now!">
+  <meta name="keywords" content="QuettaGo, Quetta, Super App, Food Delivery Quetta, Parcel Delivery Quetta, Cab Booking Quetta, Balochi Sajji, Hanna Lake, Zarghoon Road">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="QuettaGo - Quetta's Super App for Food, Parcels & Rides">
+  <meta property="og:description" content="From Prince Road Sajji to urgent parcels in Satellite Town, move and order seamlessly across Quetta with QuettaGo.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FFF5F0',
+              100: '#FFE6DC',
+              500: '#FF5A1F',
+              600: '#EA4A10',
+              700: '#C83705',
+              dark: '#0B0F17',
+              surface: '#131A26',
+              emerald: '#10B981',
+              amber: '#F59E0B'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+            urdu: ['Noto Nastaliq Urdu', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#0B0F17] text-slate-100 font-body antialiased selection:bg-orange-500 selection:text-white pb-safe-area md:pb-0">
+
+  <!-- Ambient Glow Accents -->
+  <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[550px] h-[550px] bg-orange-600/15 rounded-full blur-[140px] pointer-events-none -z-10 animate-pulse-glow"></div>
+  <div class="fixed top-1/3 right-10 w-[450px] h-[450px] bg-emerald-600/10 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 left-1/3 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3.5 px-4 sm:px-8 border-b border-white/5 bg-[#0B0F17]/80 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-white p-1 shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform flex items-center justify-center shrink-0">
+          <img src="assets/images/logo.png" alt="QuettaGo Logo" class="w-full h-full object-contain">
+        </div>
+        <div class="flex flex-col">
+          <span class="text-2xl font-black font-heading tracking-tight text-white flex items-center">
+            Quetta<span class="text-orange-500">Go</span>
+          </span>
+          <span class="text-[10px] uppercase tracking-widest text-emerald-400 font-semibold -mt-1 flex items-center">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block mr-1 status-indicator"></span> Quetta Super App
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-orange-400 transition-colors">Services</a>
+        <a href="#estimator" class="hover:text-orange-400 transition-colors flex items-center gap-1.5">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+          </span>
+          Fare Estimator
+        </a>
+        <a href="#food-culture" class="hover:text-orange-400 transition-colors">Quetta Flavors</a>
+        <a href="#landmarks" class="hover:text-orange-400 transition-colors">City Routes</a>
+        <a href="#why-us" class="hover:text-orange-400 transition-colors">Why QuettaGo</a>
+        <a href="#faqs" class="hover:text-orange-400 transition-colors">FAQs</a>
+      </nav>
+
+      <!-- CTA Buttons Desktop -->
+      <div class="hidden sm:flex items-center space-x-3">
+        <!-- Google Play Button -->
+        <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+           class="btn-shimmer relative px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 text-white font-semibold text-sm shadow-lg shadow-orange-600/30 flex items-center space-x-2 group overflow-hidden">
+          <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a2.235 2.235 0 0 1-.22-.971V2.785c0-.36.08-.696.219-.971zm11.3 11.3l2.671 2.672-12.72 7.345 10.049-10.017zm2.671-2.672l-2.671 2.672-10.049-10.018 12.72 7.346zm1.127 1.128l3.784 2.185a1.536 1.536 0 0 1 0 2.664l-3.784 2.185-2.83-2.517 2.83-2.517z"/>
+          </svg>
+          <span>Get on Google Play</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" aria-label="Open Mobile Menu" class="lg:hidden p-2 rounded-lg bg-white/5 border border-white/10 text-slate-200 hover:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OVER DRAWER -->
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-[#0B0F17]/95 backdrop-blur-2xl transition-transform duration-300 translate-x-full lg:hidden flex flex-col p-6 overflow-y-auto">
+    <div class="flex items-center justify-between pb-6 border-b border-white/10">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center shadow-md shrink-0">
+          <img src="assets/images/logo.png" alt="QuettaGo Logo" class="w-full h-full object-contain">
+        </div>
+        <span class="text-xl font-bold font-heading text-white">Quetta<span class="text-orange-500">Go</span></span>
+      </div>
+      <button id="mobileMenuClose" aria-label="Close Mobile Menu" class="p-2 rounded-lg bg-white/10 text-slate-300 hover:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col space-y-4 py-8 text-lg font-medium text-slate-200">
+      <a href="#services" class="mobile-nav-link hover:text-orange-400 py-1">Core Services (Food, Parcel, Ride)</a>
+      <a href="#estimator" class="mobile-nav-link hover:text-orange-400 py-1 flex items-center justify-between">
+        <span>Fare & Time Estimator</span>
+        <span class="text-xs bg-orange-500/20 text-orange-400 px-2 py-0.5 rounded-full border border-orange-500/30">Live</span>
+      </a>
+      <a href="#food-culture" class="mobile-nav-link hover:text-orange-400 py-1">Quetta Food Heritage</a>
+      <a href="#landmarks" class="mobile-nav-link hover:text-orange-400 py-1">City Landmarks & Routes</a>
+      <a href="#why-us" class="mobile-nav-link hover:text-orange-400 py-1">Why QuettaGo</a>
+      <a href="#faqs" class="mobile-nav-link hover:text-orange-400 py-1">Frequently Asked Questions</a>
+    </nav>
+
+    <div class="mt-auto space-y-3 pt-6 border-t border-white/10">
+      <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+         class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 text-white font-bold flex items-center justify-center space-x-2 text-center shadow-lg shadow-orange-600/30">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M3.609 1.814L13.792 12 3.61 22.186a2.235 2.235 0 0 1-.22-.971V2.785c0-.36.08-.696.219-.971zm11.3 11.3l2.671 2.672-12.72 7.345 10.049-10.017zm2.671-2.672l-2.671 2.672-10.049-10.018 12.72 7.346zm1.127 1.128l3.784 2.185a1.536 1.536 0 0 1 0 2.664l-3.784 2.185-2.83-2.517 2.83-2.517z"/>
+        </svg>
+        <span>Download on Google Play</span>
+      </a>
+      <a href="https://wa.me/923118248643?text=Hello%20QuettaGo%20Support!" target="_blank" rel="noopener noreferrer"
+         class="w-full py-3 px-4 rounded-xl bg-emerald-600/20 border border-emerald-500/30 text-emerald-300 font-semibold text-sm flex items-center justify-center gap-2 hover:bg-emerald-600/30 transition-colors">
+        <svg class="w-5 h-5 fill-current text-emerald-400" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>WhatsApp: +92 311 8248643</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <!-- Subtle Background Image with Dark Vignette Gradient -->
+    <div class="absolute inset-0 -z-20 opacity-20 bg-cover bg-center mix-blend-luminosity filter blur-[1px]" style="background-image: url('assets/images/hero_banner.jpg');"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-[#0B0F17]/80 via-[#0B0F17]/95 to-[#0B0F17]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column: Copy, Switcher & CTAs -->
+        <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+          
+          <!-- Cultural / Location Pill -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-orange-500/10 to-amber-500/10 border border-orange-500/20 text-orange-400 text-xs md:text-sm font-semibold shadow-sm">
+            <span class="text-base">🏔️</span>
+            <span>Crafted for Quetta, Balochistan</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-orange-400"></span>
+            <span class="text-slate-400 font-normal">The Fruit Garden of Pakistan</span>
+          </div>
+
+          <!-- Main Impact Headline -->
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-black font-heading tracking-tight text-white leading-[1.12]">
+            One Super App for <br class="hidden sm:inline">
+            <span class="bg-gradient-to-r from-orange-400 via-amber-300 to-emerald-400 bg-clip-text text-transparent">
+              Quetta’s Everyday Life.
+            </span>
+          </h1>
+
+          <!-- Tagline with Urdu Cultural Warmth -->
+          <p class="text-base sm:text-lg md:text-xl text-slate-300 max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+            From piping hot <strong class="text-white font-semibold">Balochi Sajji & Rosh</strong> on Prince Road, to instant <strong class="text-white font-semibold">express parcel runs</strong> in Satellite Town, and <strong class="text-white font-semibold">safe, reliable rides</strong> through Serena Chowk — QuettaGo puts your city in the palm of your hand.
+          </p>
+
+          <!-- Interactive Service Selector Tabs in Hero -->
+          <div class="p-1.5 rounded-2xl bg-slate-900/90 border border-white/10 backdrop-blur-md max-w-lg mx-auto lg:mx-0 grid grid-cols-3 gap-1 shadow-xl">
+            <button class="service-tab-btn active px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-1.5" data-service="food">
+              <span>🍗</span>
+              <span>Food</span>
+            </button>
+            <button class="service-tab-btn bg-slate-800/80 text-slate-300 px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-1.5" data-service="parcel">
+              <span>📦</span>
+              <span>Parcel</span>
+            </button>
+            <button class="service-tab-btn bg-slate-800/80 text-slate-300 px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-1.5" data-service="ride">
+              <span>🚗</span>
+              <span>Rides</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Feature Micro-Card based on Hero Switcher -->
+          <div class="max-w-lg mx-auto lg:mx-0">
+            <div id="service-food" class="service-tab-content block p-4 rounded-xl bg-orange-950/30 border border-orange-500/20 text-left transition-all">
+              <div class="flex items-center justify-between text-xs text-orange-400 font-semibold mb-1">
+                <span class="flex items-center gap-1">⚡ Hot & Insulated Winter Delivery</span>
+                <span class="text-slate-400">Avg. 25-35 mins</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-200">
+                Craving tender Namkeen Rosh, authentic Sajji, or fresh Kandahari naan? Order from Quetta’s top local restaurants with live GPS tracking.
+              </p>
+            </div>
+
+            <div id="service-parcel" class="service-tab-content hidden p-4 rounded-xl bg-emerald-950/30 border border-emerald-500/20 text-left transition-all">
+              <div class="flex items-center justify-between text-xs text-emerald-400 font-semibold mb-1">
+                <span class="flex items-center gap-1">📍 Point-to-Point City Express</span>
+                <span class="text-slate-400">Within 45 mins</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-200">
+                Send keys, documents, boutique boxes, or medicine anywhere across Quetta with secure OTP delivery confirmation.
+              </p>
+            </div>
+
+            <div id="service-ride" class="service-tab-content hidden p-4 rounded-xl bg-amber-950/30 border border-amber-500/20 text-left transition-all">
+              <div class="flex items-center justify-between text-xs text-amber-400 font-semibold mb-1">
+                <span class="flex items-center gap-1">🛡️ Upfront Transparent Fares</span>
+                <span class="text-slate-400">Bike • Auto • Car</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-200">
+                No more bargaining on cold street corners. Book swift bikes, classic Quetta rickshaws, or heated AC cars with verified captains.
+              </p>
+            </div>
+          </div>
+
+          <!-- Download Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <!-- Google Play Store Button -->
+            <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+               class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-base shadow-xl shadow-orange-600/35 hover:shadow-orange-500/50 transition-all flex items-center justify-center space-x-3.5 group">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <svg class="w-7 h-7 fill-white group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186a2.235 2.235 0 0 1-.22-.971V2.785c0-.36.08-.696.219-.971zm11.3 11.3l2.671 2.672-12.72 7.345 10.049-10.017zm2.671-2.672l-2.671 2.672-10.049-10.018 12.72 7.346zm1.127 1.128l3.784 2.185a1.536 1.536 0 0 1 0 2.664l-3.784 2.185-2.83-2.517 2.83-2.517z"/>
+                </svg>
+              </div>
+              <div class="text-left">
+                <div class="text-[10px] uppercase font-semibold tracking-wider text-orange-100">Get it on</div>
+                <div class="text-base font-extrabold leading-tight">Google Play</div>
+              </div>
+            </a>
+
+            <!-- Secondary Explore Services Button -->
+            <a href="#services" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-orange-500/40 text-slate-200 hover:text-white font-semibold text-sm transition-all flex items-center justify-center gap-2">
+              <span>Explore Services</span>
+              <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust Badges & Local Verification -->
+          <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 status-indicator"></span>
+              <span class="text-slate-300 font-medium">100% Cash on Delivery & Wallets</span>
+            </div>
+            <div class="flex items-center gap-1.5 text-amber-400 font-medium">
+              <span>★ 4.8</span>
+              <span class="text-slate-400">User Rating in Quetta</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span>🛡️</span>
+              <span class="text-slate-300">Police & ID Verified Drivers</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Stunning Mobile Mockup with Live Floating Badges -->
+        <div class="lg:col-span-5 relative flex items-center justify-center">
+          
+          <!-- Decorative Glow Halo -->
+          <div class="absolute w-[360px] h-[480px] bg-gradient-to-tr from-orange-600/30 via-amber-500/20 to-emerald-500/20 rounded-full blur-3xl -z-10 animate-pulse-glow"></div>
+
+          <!-- Phone Mockup Container -->
+          <div class="relative w-[280px] sm:w-[320px] md:w-[350px] transition-all transform hover:scale-[1.02] duration-500">
+            
+            <!-- Real Generated Phone Showcase Asset -->
+            <div class="relative rounded-[40px] p-2 bg-gradient-to-b from-slate-700/60 via-slate-900/80 to-slate-950 shadow-2xl border border-white/20 overflow-hidden">
+              <img src="assets/images/app_mockup.jpg" alt="QuettaGo Super App Interface Showcase" 
+                   class="w-full h-auto rounded-[32px] object-cover shadow-inner block" loading="eager">
+              
+              <!-- Subtle Glass Overlay Shimmer -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none rounded-[32px]"></div>
+            </div>
+
+            <!-- Floating Notification Badge 1: Sajji Delivery -->
+            <div class="absolute -top-4 -left-6 sm:-left-10 glass-card p-3 rounded-2xl shadow-xl border border-orange-500/30 flex items-center space-x-3 animate-float max-w-[210px] hidden sm:flex">
+              <div class="w-10 h-10 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center text-xl shrink-0">
+                🍗
+              </div>
+              <div class="text-left overflow-hidden">
+                <div class="text-[11px] font-bold text-white truncate">Balochi Sajji en route</div>
+                <div class="text-[10px] text-emerald-400 flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Arriving in 12m
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Notification Badge 2: Verified Captain Ride -->
+            <div class="absolute -bottom-6 -right-6 sm:-right-8 glass-card p-3.5 rounded-2xl shadow-xl border border-emerald-500/30 flex items-center space-x-3 animate-float-delayed max-w-[230px] hidden sm:flex">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl shrink-0">
+                🚗
+              </div>
+              <div class="text-left overflow-hidden">
+                <div class="text-[11px] font-bold text-white truncate">Captain Jan • Toyota Mini</div>
+                <div class="text-[10px] text-slate-400">Serena Chowk ➔ Satellite Town</div>
+                <div class="text-[10px] font-bold text-amber-400">₨ 240 (Fixed Fare)</div>
+              </div>
+            </div>
+
+            <!-- Floating Live Status Badge: Top-Right -->
+            <div class="absolute top-1/3 -right-6 glass-pill px-3 py-1.5 rounded-full text-[10px] font-bold text-white flex items-center gap-1.5 shadow-lg border border-white/15 hidden md:flex">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 status-indicator"></span>
+              <span>Live in Quetta</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE CITY MARQUEE TICKER (Localities of Quetta) -->
+  <div class="border-y border-white/10 bg-slate-900/60 backdrop-blur-md py-3.5 overflow-hidden">
+    <div class="flex items-center space-x-4">
+      <div class="shrink-0 px-4 text-xs font-bold uppercase tracking-wider text-orange-400 flex items-center gap-2 border-r border-white/10">
+        <span class="w-2 h-2 rounded-full bg-orange-500 animate-ping"></span>
+        <span>Active Zones</span>
+      </div>
+      <div class="overflow-hidden flex-1 relative">
+        <div class="animate-marquee text-xs sm:text-sm font-medium text-slate-300 flex items-center space-x-8">
+          <span>📍 Jinnah Road</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Hanna Lake & Urak Valley</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Serena Chowk & Zarghoon Rd</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Satellite Town</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Prince Road Food Street</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Liaquat & Suraj Ganj Bazaar</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Quetta Cantt & Staff College</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 BUITEMS Takatu Campus</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Brewery & Samungli Road</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Hazarganji Chiltan</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Balochistan University</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Chaman Phatak</span>
+          <!-- Duplicate for seamless continuous loop -->
+          <span class="text-orange-500">•</span>
+          <span>📍 Jinnah Road</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Hanna Lake & Urak Valley</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Serena Chowk & Zarghoon Rd</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Satellite Town</span>
+          <span class="text-orange-500">•</span>
+          <span>📍 Prince Road Food Street</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CORE SERVICES SECTION -->
+  <section id="services" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-400 bg-orange-500/10 border border-orange-500/20">
+          Tailored for Every Quetta Need
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-white tracking-tight">
+          Three Super Services. <span class="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">One Powerful App.</span>
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+          No need to clutter your smartphone with multiple apps. QuettaGo integrates food dining, express logistics, and personal transport into one seamless, localized experience.
+        </p>
+      </div>
+
+      <!-- Services 3-Grid Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- CARD 1: Food Delivery -->
+        <div class="group relative rounded-3xl p-8 bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-white/10 hover:border-orange-500/50 shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden">
+          <div class="absolute -right-8 -top-8 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl group-hover:bg-orange-500/25 transition-all"></div>
+          
+          <div class="space-y-6">
+            <!-- Icon & Badge -->
+            <div class="flex items-center justify-between">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center text-3xl shadow-lg shadow-orange-500/30 group-hover:scale-110 transition-transform">
+                🍗
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-bold text-orange-400 bg-orange-500/10 border border-orange-500/20">
+                Local Delicacies
+              </span>
+            </div>
+
+            <!-- Content -->
+            <div>
+              <h3 class="text-2xl font-bold font-heading text-white group-hover:text-orange-400 transition-colors">
+                Food Delivery
+              </h3>
+              <p class="text-xs text-orange-400/90 font-medium mt-0.5">Top Quetta Restaurants to Your Dastarkhwan</p>
+              
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Order sizzling Balochi Sajji from Prince Road, tender Namkeen Rosh, steaming Kandahari Naans, burgers, pizzas, and traditional Sulaimani Chai delivered directly to your doorstep.
+              </p>
+            </div>
+
+            <!-- Bullet Features -->
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-2 border-t border-white/5">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Insulated thermal bags built for Quetta's cold winters</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Live GPS tracking of your delivery rider</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Zero hidden packaging markups</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="pt-6 mt-6 border-t border-white/5">
+            <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+               class="text-xs font-bold text-orange-400 group-hover:text-orange-300 flex items-center justify-between">
+              <span>Order Food on QuettaGo</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2: Parcel Pickup & Drop -->
+        <div class="group relative rounded-3xl p-8 bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-white/10 hover:border-emerald-500/50 shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden">
+          <div class="absolute -right-8 -top-8 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/25 transition-all"></div>
+          
+          <div class="space-y-6">
+            <!-- Icon & Badge -->
+            <div class="flex items-center justify-between">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-3xl shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform">
+                📦
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20">
+                Express Courier
+              </span>
+            </div>
+
+            <!-- Content -->
+            <div>
+              <h3 class="text-2xl font-bold font-heading text-white group-hover:text-emerald-400 transition-colors">
+                Parcel Pickup & Drop
+              </h3>
+              <p class="text-xs text-emerald-400/90 font-medium mt-0.5">Send Anything Across Town in Minutes</p>
+              
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Forgot your house keys? Need urgent university documents stamped, medical prescriptions delivered, or boutique packages sent? QuettaGo riders pick up and deliver door-to-door.
+              </p>
+            </div>
+
+            <!-- Bullet Features -->
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-2 border-t border-white/5">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Swift bike couriers through busy bazaar streets</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Digital OTP code & photo delivery confirmation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Affordable flat city rates starting from PKR 85</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="pt-6 mt-6 border-t border-white/5">
+            <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+               class="text-xs font-bold text-emerald-400 group-hover:text-emerald-300 flex items-center justify-between">
+              <span>Send a Parcel Now</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 3: Ride Booking -->
+        <div class="group relative rounded-3xl p-8 bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-white/10 hover:border-amber-500/50 shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden">
+          <div class="absolute -right-8 -top-8 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/25 transition-all"></div>
+          
+          <div class="space-y-6">
+            <!-- Icon & Badge -->
+            <div class="flex items-center justify-between">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 to-yellow-400 flex items-center justify-center text-3xl shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform">
+                🚗
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-bold text-amber-400 bg-amber-500/10 border border-amber-500/20">
+                Safe City Rides
+              </span>
+            </div>
+
+            <!-- Content -->
+            <div>
+              <h3 class="text-2xl font-bold font-heading text-white group-hover:text-amber-400 transition-colors">
+                Ride Booking
+              </h3>
+              <p class="text-xs text-amber-400/90 font-medium mt-0.5">Bike • Quetta Rickshaw • AC Cars</p>
+              
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Experience hassle-free city transit with no street arguments over fares. Choose between quick Moto bikes, traditional rickshaws, or comfortable air-conditioned cars with verified captains.
+              </p>
+            </div>
+
+            <!-- Bullet Features -->
+            <ul class="space-y-2.5 text-xs text-slate-300 pt-2 border-t border-white/5">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Upfront estimated fare shown before booking</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Family safety share & 24/7 in-app emergency SOS</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Vetted, polite, and background-cleared local drivers</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="pt-6 mt-6 border-t border-white/5">
+            <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+               class="text-xs font-bold text-amber-400 group-hover:text-amber-300 flex items-center justify-between">
+              <span>Book a Ride Now</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE LIVE FARE & TIME ESTIMATOR -->
+  <section id="estimator" class="py-20 relative bg-slate-900/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Explainer -->
+        <div class="lg:col-span-5 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-400 bg-orange-500/10 border border-orange-500/20">
+            <span>⚡ Instant City Calculator</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
+            Plan Your Route. <br>
+            <span class="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">Know the Cost Upfront.</span>
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            In Quetta, you shouldn’t have to guess or negotiate in the cold. Try our live calculator to preview estimated fares and delivery arrival times between popular spots across the city.
+          </p>
+
+          <div class="space-y-3 pt-2 text-xs text-slate-400">
+            <div class="flex items-center gap-2.5">
+              <span class="w-5 h-5 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold">✓</span>
+              <span>100% Transparent calculations based on real road distances</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="w-5 h-5 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold">✓</span>
+              <span>No unexpected peak surges or hidden convenience fees</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="w-5 h-5 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold">✓</span>
+              <span>Pay in Cash or seamlessly via EasyPaisa / JazzCash</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Calculator Card -->
+        <div class="lg:col-span-7">
+          <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl relative">
+            <div class="absolute -top-3 right-6 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+              Live Interactive Widget
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+              
+              <!-- Select Service -->
+              <div class="space-y-1.5">
+                <label for="estService" class="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
+                  <span>🚗</span> Service Type
+                </label>
+                <select id="estService" class="w-full bg-slate-900/90 border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-orange-500 transition-colors">
+                  <option value="bike">QuettaGo Moto (Bike)</option>
+                  <option value="auto">QuettaGo Rickshaw</option>
+                  <option value="car" selected>QuettaGo Ride (AC Car)</option>
+                  <option value="parcel">Parcel Express</option>
+                  <option value="food">Food Delivery Order</option>
+                </select>
+              </div>
+
+              <!-- Pickup Location -->
+              <div class="space-y-1.5">
+                <label for="estPickup" class="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
+                  <span class="text-emerald-400">●</span> Pickup Location
+                </label>
+                <select id="estPickup" class="w-full bg-slate-900/90 border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-orange-500 transition-colors">
+                  <option value="serena" selected>Serena Chowk / Zarghoon Rd</option>
+                  <option value="liaquat">Liaquat Bazaar / Jinnah Rd</option>
+                  <option value="satellite">Satellite Town</option>
+                  <option value="cantt">Quetta Cantt / Staff College</option>
+                  <option value="airport">Airport Road / Samungli</option>
+                  <option value="sariab">Balochistan Univ / Sariab</option>
+                  <option value="buitems">BUITEMS (Takatu)</option>
+                  <option value="hanna">Hanna Lake / Urak Rd</option>
+                  <option value="hazarganji">Hazarganji Chiltan</option>
+                </select>
+              </div>
+
+              <!-- Drop Location -->
+              <div class="space-y-1.5">
+                <label for="estDrop" class="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
+                  <span class="text-orange-400">■</span> Destination
+                </label>
+                <select id="estDrop" class="w-full bg-slate-900/90 border border-white/15 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-orange-500 transition-colors">
+                  <option value="satellite" selected>Satellite Town</option>
+                  <option value="serena">Serena Chowk / Zarghoon Rd</option>
+                  <option value="liaquat">Liaquat Bazaar / Jinnah Rd</option>
+                  <option value="cantt">Quetta Cantt / Staff College</option>
+                  <option value="airport">Airport Road / Samungli</option>
+                  <option value="sariab">Balochistan Univ / Sariab</option>
+                  <option value="buitems">BUITEMS (Takatu)</option>
+                  <option value="hanna">Hanna Lake / Urak Rd</option>
+                  <option value="hazarganji">Hazarganji Chiltan</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Action Button -->
+            <button id="calculateFareBtn" class="w-full py-3 rounded-xl bg-orange-600/30 hover:bg-orange-600 border border-orange-500/40 text-orange-200 hover:text-white font-semibold text-xs tracking-wide transition-all mb-6 flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+              <span>Recalculate Estimate</span>
+            </button>
+
+            <!-- Results Output Display -->
+            <div class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 rounded-2xl p-5 border border-white/10">
+              <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-white/10">
+                <div>
+                  <span id="fareServiceBadge" class="text-xs font-bold text-orange-400 bg-orange-500/10 px-2.5 py-1 rounded-md border border-orange-500/20">
+                    QuettaGo Ride (AC Car)
+                  </span>
+                  <div id="fareRouteSummary" class="text-sm font-semibold text-white mt-1.5">
+                    Serena Chowk ➔ Satellite Town
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="text-[10px] uppercase font-bold text-slate-400">Estimated Fare</div>
+                  <div id="fareResultPrice" class="text-2xl sm:text-3xl font-extrabold font-heading text-emerald-400">
+                    PKR 240 - 280
+                  </div>
+                </div>
+              </div>
+
+              <!-- Metrics Row -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 text-center">
+                <div class="p-2.5 rounded-xl bg-white/5 border border-white/5">
+                  <div class="text-[10px] text-slate-400 uppercase font-bold">Estimated Time</div>
+                  <div id="fareResultTime" class="text-sm sm:text-base font-bold text-white mt-0.5">~18 mins</div>
+                </div>
+                <div class="p-2.5 rounded-xl bg-white/5 border border-white/5">
+                  <div class="text-[10px] text-slate-400 uppercase font-bold">Road Distance</div>
+                  <div id="fareResultDistance" class="text-sm sm:text-base font-bold text-white mt-0.5">5.2 km</div>
+                </div>
+                <div class="col-span-2 sm:col-span-1 p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center">
+                  <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+                     class="w-full py-1.5 px-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5">
+                    <span>Book on App</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUETTA FOOD & CULTURE SPOTLIGHT -->
+  <section id="food-culture" class="py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="space-y-3 max-w-2xl">
+          <div class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-400 bg-orange-500/10 border border-orange-500/20">
+            Authentic Flavors of Balochistan
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-white tracking-tight">
+            Craving Quetta? <br>
+            <span class="bg-gradient-to-r from-orange-400 via-amber-300 to-emerald-400 bg-clip-text text-transparent">
+              Legendary Feasts Delivered Sizzling Hot.
+            </span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            Quetta’s culinary culture is renowned across Pakistan. From wood-ember roasted Sajji to aromatic Namkeen Rosh, QuettaGo connects you directly to the city’s most authentic kitchens.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2 text-xs font-semibold">
+          <button class="food-filter-btn px-4 py-2 rounded-xl bg-orange-500 text-white shadow-md transition-all" data-category="all">All Specialties</button>
+          <button class="food-filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-300 hover:bg-slate-800 transition-all" data-category="meat">Signature Meats</button>
+          <button class="food-filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-300 hover:bg-slate-800 transition-all" data-category="winter">Winter Classics</button>
+          <button class="food-filter-btn px-4 py-2 rounded-xl bg-slate-800/80 text-slate-300 hover:bg-slate-800 transition-all" data-category="chai">Chai & Bazaars</button>
+        </div>
+      </div>
+
+      <!-- Feature Big Banner + 4 Dish Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-12">
+        
+        <!-- Big Featured Showcase: Balochi Sajji -->
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden relative min-h-[380px] flex flex-col justify-end p-8 border border-white/10 group shadow-2xl">
+          <img src="assets/images/sajji_food.jpg" alt="Traditional Balochi Sajji and Namkeen Rosh" 
+               class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 -z-10" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent -z-10"></div>
+          
+          <div class="space-y-3 relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-bold text-amber-300 bg-black/60 backdrop-blur-md border border-amber-500/30">
+              <span>⭐ Quetta's #1 Most Loved Dish</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold font-heading text-white">
+              Authentic Prince Road Balochi Sajji
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-200 max-w-xl leading-relaxed">
+              Whole chicken or tender lamb leg marinated solely with rock salt and roasted to crisp golden perfection over open coals. Served with steaming cumin-scented Kabuli rice and hot oven-fresh Kandahari naan.
+            </p>
+            <div class="flex items-center gap-4 pt-2">
+              <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+                 class="px-5 py-2.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs shadow-lg transition-colors flex items-center gap-2">
+                <span>Order on QuettaGo</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+              <span class="text-xs font-semibold text-emerald-400">⚡ Delivered fresh in insulated cases</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Supporting Cultural Delights -->
+        <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+          
+          <!-- Dish 1: Namkeen Rosh -->
+          <div class="food-card-item rounded-2xl p-5 bg-slate-900/80 border border-white/10 hover:border-orange-500/40 transition-all flex items-start gap-4" data-category="meat">
+            <div class="w-14 h-14 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center text-2xl shrink-0 border border-orange-500/20">
+              🍲
+            </div>
+            <div class="space-y-1">
+              <div class="flex items-center justify-between">
+                <h4 class="text-base font-bold text-white">Namkeen Rosh</h4>
+                <span class="text-[10px] font-bold text-orange-400 bg-orange-500/10 px-2 py-0.5 rounded">Mutton Stew</span>
+              </div>
+              <p class="text-xs text-slate-300 leading-normal">
+                Slow-simmered tender meat chunks in rich natural marrow broth with potatoes and whole black peppercorns. Quetta’s winter powerhouse.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dish 2: Landhi (Dry Meat) & Khadda Kebab -->
+          <div class="food-card-item rounded-2xl p-5 bg-slate-900/80 border border-white/10 hover:border-orange-500/40 transition-all flex items-start gap-4" data-category="winter">
+            <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl shrink-0 border border-amber-500/20">
+              🥩
+            </div>
+            <div class="space-y-1">
+              <div class="flex items-center justify-between">
+                <h4 class="text-base font-bold text-white">Landhi & Khadda Kebab</h4>
+                <span class="text-[10px] font-bold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded">Traditional</span>
+              </div>
+              <p class="text-xs text-slate-300 leading-normal">
+                Century-old preservation heritage: seasoned sun-dried meat and underground pit-roasted lamb specially prepared for frosty Quetta nights.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dish 3: Quetta Karak Chai & Dry Fruits -->
+          <div class="food-card-item rounded-2xl p-5 bg-slate-900/80 border border-white/10 hover:border-orange-500/40 transition-all flex items-start gap-4" data-category="chai">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl shrink-0 border border-emerald-500/20">
+              ☕
+            </div>
+            <div class="space-y-1">
+              <div class="flex items-center justify-between">
+                <h4 class="text-base font-bold text-white">Quetta Chai & Dry Fruits</h4>
+                <span class="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Bazaar Culture</span>
+              </div>
+              <p class="text-xs text-slate-300 leading-normal">
+                Velvety Doodh Patti, Sulaimani Kahwa with cardamom, and fresh almonds, pistachios, and pine nuts ordered from Liaquat Bazaar.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUETTA LANDMARKS & CITY CONNECTIVITY -->
+  <section id="landmarks" class="py-20 relative bg-slate-900/30 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 border border-emerald-500/20">
+          Seamless City Coverage
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-white tracking-tight">
+          Connecting Every Corner of Quetta
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+          From tranquil picnic spots in Urak Valley to bustling commercial markets on Jinnah Road, QuettaGo bridges distances and keeps the valley united.
+        </p>
+      </div>
+
+      <!-- Landmark Grid Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Landmark 1: Hanna Lake -->
+        <div class="group rounded-3xl overflow-hidden bg-slate-900 border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between">
+          <div class="relative h-48 overflow-hidden">
+            <img src="assets/images/hanna_lake.jpg" alt="Hanna Lake Quetta" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+            <div class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-[10px] font-bold text-emerald-400 border border-emerald-500/30">
+              Recreation & Valley
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-lg font-bold text-white font-heading">Hanna Lake & Urak</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Weekend escapes, apple orchards, and family boat rides. Easy ride bookings with reliable return pick-ups right on time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Landmark 2: Serena Chowk & Zarghoon Road -->
+        <div class="group rounded-3xl overflow-hidden bg-slate-900 border border-white/10 hover:border-orange-500/40 transition-all flex flex-col justify-between">
+          <div class="relative h-48 overflow-hidden bg-gradient-to-tr from-slate-900 to-slate-800 flex items-center justify-center p-6 text-center">
+            <div class="space-y-2">
+              <div class="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center text-2xl mx-auto">
+                🏛️
+              </div>
+              <div class="text-xs font-bold text-slate-300">Zarghoon Road Hub</div>
+            </div>
+            <div class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-[10px] font-bold text-orange-400 border border-orange-500/30">
+              Commercial Hub
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-lg font-bold text-white font-heading">Serena Chowk & Cantt</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Connecting government offices, corporate institutions, luxury dining, and safe cantonment residential boulevards.
+            </p>
+          </div>
+        </div>
+
+        <!-- Landmark 3: Liaquat & Suraj Ganj Bazaar -->
+        <div class="group rounded-3xl overflow-hidden bg-slate-900 border border-white/10 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+          <div class="relative h-48 overflow-hidden bg-gradient-to-tr from-slate-900 to-slate-800 flex items-center justify-center p-6 text-center">
+            <div class="space-y-2">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mx-auto">
+                🛍️
+              </div>
+              <div class="text-xs font-bold text-slate-300">Historic Downtown</div>
+            </div>
+            <div class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-[10px] font-bold text-amber-400 border border-amber-500/30">
+              Shopping & Bazaars
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-lg font-bold text-white font-heading">Liaquat & Jinnah Road</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Quetta’s heartbeat for cloth merchants, dry fruit emporiums, electronics, and swift motorcycle courier dispatch.
+            </p>
+          </div>
+        </div>
+
+        <!-- Landmark 4: BUITEMS & Balochistan University -->
+        <div class="group rounded-3xl overflow-hidden bg-slate-900 border border-white/10 hover:border-cyan-500/40 transition-all flex flex-col justify-between">
+          <div class="relative h-48 overflow-hidden bg-gradient-to-tr from-slate-900 to-slate-800 flex items-center justify-center p-6 text-center">
+            <div class="space-y-2">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mx-auto">
+                🎓
+              </div>
+              <div class="text-xs font-bold text-slate-300">Student Corridors</div>
+            </div>
+            <div class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-[10px] font-bold text-cyan-400 border border-cyan-500/30">
+              Campus Transit
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h3 class="text-lg font-bold text-white font-heading">BUITEMS & Univ Towns</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Affordable daily commute options for thousands of students and faculty traveling safely between Takatu Campus, Sariab, and city centers.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE QUETTAGO -->
+  <section id="why-us" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-400 bg-orange-500/10 border border-orange-500/20">
+          The QuettaGo Advantage
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-white tracking-tight">
+          Built For Quetta. <br class="hidden sm:inline">
+          <span class="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">Engineered for Reliability.</span>
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+          Generic national apps often fail to understand Quetta's unique mountain weather, neighborhood layout, and local languages. QuettaGo is designed from the ground up for our city.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="glass-card p-7 rounded-3xl border border-white/10 hover:border-orange-500/30 transition-all space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center text-2xl font-bold">
+            ❄️
+          </div>
+          <h3 class="text-xl font-bold text-white font-heading">Quetta Winter Tested</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Our riders are equipped with specialized thermal insulated delivery bags ensuring your Rosh and Sajji arrive piping hot, even on freezing sub-zero winter nights.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="glass-card p-7 rounded-3xl border border-white/10 hover:border-emerald-500/30 transition-all space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl font-bold">
+            🗣️
+          </div>
+          <h3 class="text-xl font-bold text-white font-heading">Local Multilingual Support</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Experience customer support that speaks your tongue. Our dedicated support helpline assists you fluently in Urdu, Pashto, Balochi, Brahui, and English.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="glass-card p-7 rounded-3xl border border-white/10 hover:border-amber-500/30 transition-all space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl font-bold">
+            💵
+          </div>
+          <h3 class="text-xl font-bold text-white font-heading">Zero Hidden Charges</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Transparent upfront pricing. You see the exact fare before confirming your order. Pay comfortably with Cash on Delivery, EasyPaisa, or JazzCash.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="glass-card p-7 rounded-3xl border border-white/10 hover:border-cyan-500/30 transition-all space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl font-bold">
+            🛡️
+          </div>
+          <h3 class="text-xl font-bold text-white font-heading">Family & Women Safety</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            100% CNIC and police verified captains with live trip sharing links so your family can follow your route in real time, plus a one-tap 24/7 emergency SOS button.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="glass-card p-7 rounded-3xl border border-white/10 hover:border-purple-500/30 transition-all space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-2xl font-bold">
+            ⚡
+          </div>
+          <h3 class="text-xl font-bold text-white font-heading">Lightning Hyper-Local Dispatch</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Our smart dispatch algorithms assign nearby riders stationed in your specific neighborhood, drastically shortening waiting times during busy peak hours.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="glass-card p-7 rounded-3xl border border-white/10 hover:border-rose-500/30 transition-all space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center text-2xl font-bold">
+            🤝
+          </div>
+          <h3 class="text-xl font-bold text-white font-heading">Empowering Local Youth</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            QuettaGo generates dignified, flexible income opportunities for hundreds of youth, students, and drivers in Quetta with weekly payouts and safety gear.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (3 Simple Steps) -->
+  <section class="py-20 relative bg-slate-900/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
+          Simplicity at Your Fingertips
+        </h2>
+        <p class="text-slate-400 text-sm">
+          Getting what you need in Quetta takes less than 60 seconds on the app.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <!-- Step 1 -->
+        <div class="text-center space-y-4 p-6 rounded-2xl bg-slate-950/60 border border-white/5 relative">
+          <div class="w-16 h-16 rounded-2xl bg-orange-600/20 border border-orange-500/30 text-orange-400 flex items-center justify-center text-2xl font-black font-heading mx-auto shadow-lg">
+            01
+          </div>
+          <h3 class="text-lg font-bold text-white">Choose Your Service</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Select between Food Delivery, Instant Parcel Courier, or Ride Booking directly on the home screen.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center space-y-4 p-6 rounded-2xl bg-slate-950/60 border border-white/5 relative">
+          <div class="w-16 h-16 rounded-2xl bg-amber-500/20 border border-amber-500/30 text-amber-400 flex items-center justify-center text-2xl font-black font-heading mx-auto shadow-lg">
+            02
+          </div>
+          <h3 class="text-lg font-bold text-white">Set Location & Confirm</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Pick your restaurant or destination on the Quetta city map. See transparent fare and arrival time upfront.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center space-y-4 p-6 rounded-2xl bg-slate-950/60 border border-white/5 relative">
+          <div class="w-16 h-16 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl font-black font-heading mx-auto shadow-lg">
+            03
+          </div>
+          <h3 class="text-lg font-bold text-white">Track Live & Relax</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Watch your captain or delivery rider approach in real-time. Pay with Cash, EasyPaisa, or JazzCash upon arrival.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VOICE OF QUETTA (Customer Testimonials) -->
+  <section class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-400 bg-orange-500/10 border border-orange-500/20">
+          Loved Across Quetta
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black font-heading text-white tracking-tight">
+          Real Stories from Quetta Citizens
+        </h2>
+        <p class="text-slate-400 text-sm">
+          Hear how QuettaGo is making daily life simpler for students, doctors, families, and shopkeepers.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="glass-card p-6 rounded-3xl border border-white/10 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed italic">
+              "Ordering Sajji and Rosh on cold winter nights used to mean driving through frozen traffic and waiting for an hour. QuettaGo brings it piping hot to our home in Satellite Town within 30 minutes. An absolute blessing for families!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-orange-500/20 text-orange-300 flex items-center justify-center font-bold text-sm">
+              TM
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">Dr. Tariq Mengal</div>
+              <div class="text-[10px] text-slate-400">Civil Hospital • Satellite Town</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="glass-card p-6 rounded-3xl border border-white/10 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed italic">
+              "As a BUITEMS student commuting to Takatu campus from Cantt, negotiating with rickshaw drivers every morning was exhausting. QuettaGo's upfront fixed pricing and live driver tracking make my commute safe and completely stress-free."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-sm">
+              RK
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">Rabia Kakar</div>
+              <div class="text-[10px] text-slate-400">CS Student • BUITEMS Campus</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="glass-card p-6 rounded-3xl border border-white/10 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed italic">
+              "We run a dry fruit store in Liaquat Bazaar. QuettaGo Parcel Express is our secret weapon. Whenever a customer in Airport Road needs a 5kg parcel delivered urgently, a rider arrives within 10 minutes and delivers it safely."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center font-bold text-sm">
+              HA
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">Haji Noorullah Achakzai</div>
+              <div class="text-[10px] text-slate-400">Merchant • Liaquat Bazaar</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- APP DOWNLOAD CALL TO ACTION (CTA) SECTION -->
+  <section id="download" class="py-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Big Gradient Feature Box -->
+      <div class="relative rounded-[36px] bg-gradient-to-r from-orange-950/80 via-slate-900/90 to-emerald-950/80 border border-orange-500/30 p-8 sm:p-12 lg:p-16 shadow-2xl overflow-hidden">
+        
+        <!-- Glowing Background Orbs -->
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-orange-600/30 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute -left-20 -top-20 w-96 h-96 bg-emerald-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+          
+          <!-- Text & Actions -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-orange-400 bg-orange-500/10 border border-orange-500/20">
+              ⚡ Available on Android Right Now
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-white tracking-tight leading-tight">
+              Ready to Experience <br>
+              <span class="bg-gradient-to-r from-orange-400 via-amber-300 to-emerald-400 bg-clip-text text-transparent">
+                Quetta in the Fast Lane?
+              </span>
+            </h2>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
+              Download QuettaGo today and enjoy seamless food deliveries, reliable express couriers, and instant city rides. Compatible with all Android smartphones.
+            </p>
+
+            <!-- Actions Row -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+                 class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-extrabold text-base shadow-2xl shadow-orange-600/40 transition-all flex items-center justify-center gap-3.5 group">
+                <svg class="w-6 h-6 fill-white group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186a2.235 2.235 0 0 1-.22-.971V2.785c0-.36.08-.696.219-.971zm11.3 11.3l2.671 2.672-12.72 7.345 10.049-10.017zm2.671-2.672l-2.671 2.672-10.049-10.018 12.72 7.346zm1.127 1.128l3.784 2.185a1.536 1.536 0 0 1 0 2.664l-3.784 2.185-2.83-2.517 2.83-2.517z"/>
+                </svg>
+                <div class="text-left">
+                  <div class="text-[10px] uppercase font-semibold text-orange-200">Download for Android</div>
+                  <div class="text-lg leading-tight">Google Play Store</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- App Technical Highlights -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-5 text-xs text-slate-300 pt-2 font-medium">
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Lightweight (~18MB APK)
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Android 7.0 & Higher
+              </span>
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Instant OTP Verification
+              </span>
+            </div>
+
+          </div>
+
+          <!-- Right: Google Play Store App Showcase Card -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="glass-card-light p-6 sm:p-7 rounded-3xl text-slate-900 shadow-2xl text-center max-w-xs w-full relative overflow-hidden">
+              <div class="w-20 h-20 rounded-3xl bg-white p-2 mx-auto flex items-center justify-center shadow-xl shadow-orange-500/20 mb-4 border border-slate-100">
+                <img src="assets/images/logo.png" alt="QuettaGo Logo" class="w-full h-full object-contain">
+              </div>
+              
+              <h3 class="text-xl font-extrabold font-heading text-slate-900">QuettaGo</h3>
+              <p class="text-xs text-slate-500 font-medium">Food • Parcels • Rides</p>
+              
+              <!-- App Stats Strip -->
+              <div class="grid grid-cols-3 gap-2 py-4 my-4 border-y border-slate-200/80 text-center">
+                <div>
+                  <div class="text-sm font-extrabold text-slate-900 flex items-center justify-center gap-0.5">
+                    <span>4.8</span> <span class="text-amber-500 text-xs">★</span>
+                  </div>
+                  <div class="text-[10px] text-slate-500 font-medium">1.2K reviews</div>
+                </div>
+                <div class="border-x border-slate-200">
+                  <div class="text-sm font-extrabold text-slate-900">10K+</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Downloads</div>
+                </div>
+                <div>
+                  <div class="text-sm font-extrabold text-slate-900">3+</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Rated</div>
+                </div>
+              </div>
+
+              <!-- Direct Install CTA Button -->
+              <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+                 class="w-full py-3 px-4 rounded-xl bg-slate-950 hover:bg-slate-900 text-white font-bold text-xs shadow-lg transition-all flex items-center justify-center gap-2 group">
+                <svg class="w-4 h-4 fill-current text-emerald-400 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186a2.235 2.235 0 0 1-.22-.971V2.785c0-.36.08-.696.219-.971zm11.3 11.3l2.671 2.672-12.72 7.345 10.049-10.017zm2.671-2.672l-2.671 2.672-10.049-10.018 12.72 7.346zm1.127 1.128l3.784 2.185a1.536 1.536 0 0 1 0 2.664l-3.784 2.185-2.83-2.517 2.83-2.517z"/>
+                </svg>
+                <span>Install from Google Play</span>
+              </a>
+
+              <div class="text-[10px] text-slate-400 font-medium mt-3 flex items-center justify-center gap-1.5">
+                <svg class="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <span>Verified by Google Play Protect</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FREQUENTLY ASKED QUESTIONS (FAQ Accordion) -->
+  <section id="faqs" class="py-20 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14 space-y-3">
+        <div class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-400 bg-orange-500/10 border border-orange-500/20">
+          Got Questions?
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-slate-400 text-sm">
+          Everything you need to know about using QuettaGo across the city.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item glass-card rounded-2xl border border-white/10 transition-all overflow-hidden open">
+          <button class="faq-header w-full p-5 text-left flex items-center justify-between text-white font-bold text-sm sm:text-base">
+            <span>What areas of Quetta does QuettaGo cover?</span>
+            <svg class="faq-icon w-5 h-5 text-orange-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="faq-content px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            QuettaGo operates comprehensively across Quetta metropolitan zones, including Jinnah Road, Zarghoon Road, Serena Chowk, Quetta Cantt, Satellite Town, Brewery Road, Liaquat Bazaar, Prince Road, Airport Road, Samungli, Sariab Road, BUITEMS Takatu Campus, and scenic routes out to Hanna Lake and Urak Valley.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item glass-card rounded-2xl border border-white/10 transition-all overflow-hidden">
+          <button class="faq-header w-full p-5 text-left flex items-center justify-between text-white font-bold text-sm sm:text-base">
+            <span>How do payments work? Is Cash on Delivery supported?</span>
+            <svg class="faq-icon w-5 h-5 text-orange-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="faq-content px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Yes! We understand Quetta’s financial preferences. You can pay with standard Cash on Delivery (COD) for food and parcels, directly in cash to ride captains, or digitally via EasyPaisa, JazzCash, or Debit/Credit cards through our secure in-app portal.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item glass-card rounded-2xl border border-white/10 transition-all overflow-hidden">
+          <button class="faq-header w-full p-5 text-left flex items-center justify-between text-white font-bold text-sm sm:text-base">
+            <span>How does QuettaGo ensure rider and passenger safety?</span>
+            <svg class="faq-icon w-5 h-5 text-orange-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="faq-content px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Every QuettaGo driver and courier undergoes rigorous verification, including NADRA CNIC validation, criminal background checks, and vehicle mechanical inspection. Each trip is tracked live via GPS, and passengers can share their live location with family members or trigger our 24/7 in-app SOS emergency helpline.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item glass-card rounded-2xl border border-white/10 transition-all overflow-hidden">
+          <button class="faq-header w-full p-5 text-left flex items-center justify-between text-white font-bold text-sm sm:text-base">
+            <span>Can I send fragile or valuable items via Parcel Express?</span>
+            <svg class="faq-icon w-5 h-5 text-orange-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="faq-content px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Yes. Our Parcel service handles business documents, electronic items, keys, boutique clothes, and medical supplies safely. Every package is sealed, assigned an OTP code that only the intended recipient can provide to unlock delivery, and verified with photo confirmation.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item glass-card rounded-2xl border border-white/10 transition-all overflow-hidden">
+          <button class="faq-header w-full p-5 text-left flex items-center justify-between text-white font-bold text-sm sm:text-base">
+            <span>How can restaurant owners or drivers partner with QuettaGo?</span>
+            <svg class="faq-icon w-5 h-5 text-orange-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="faq-content px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            We are actively expanding our partner network in Quetta! Drivers with motorcycles, rickshaws, or cars, and local restaurants/sweet shops can register directly within the app or contact our Quetta office at Musa Colony, Sariab Road, Quetta. We offer high commission shares and same-week disbursements.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-slate-950 pt-16 pb-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Brand Summary -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-white p-1 flex items-center justify-center shadow-lg shadow-orange-500/20 shrink-0">
+              <img src="assets/images/logo.png" alt="QuettaGo Logo" class="w-full h-full object-contain">
+            </div>
+            <span class="text-2xl font-black font-heading text-white">Quetta<span class="text-orange-500">Go</span></span>
+          </div>
+
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Quetta’s pioneering multi-service super app. Empowering local food culinary traditions, swift point-to-point courier logistics, and safe city transit across the scenic valley of Quetta, Pakistan.
+          </p>
+
+          <div class="pt-2">
+            <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:border-orange-500/40 text-white font-semibold transition-all">
+              <svg class="w-4 h-4 fill-current text-orange-400" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.235 2.235 0 0 1-.22-.971V2.785c0-.36.08-.696.219-.971zm11.3 11.3l2.671 2.672-12.72 7.345 10.049-10.017zm2.671-2.672l-2.671 2.672-10.049-10.018 12.72 7.346zm1.127 1.128l3.784 2.185a1.536 1.536 0 0 1 0 2.664l-3.784 2.185-2.83-2.517 2.83-2.517z"/></svg>
+              <span>Download on Google Play</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider font-heading">Core Services</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#services" class="hover:text-orange-400 transition-colors">Food Delivery</a></li>
+            <li><a href="#services" class="hover:text-orange-400 transition-colors">Parcel Pickup & Drop</a></li>
+            <li><a href="#services" class="hover:text-orange-400 transition-colors">QuettaGo Moto (Bike)</a></li>
+            <li><a href="#services" class="hover:text-orange-400 transition-colors">QuettaGo Rickshaw</a></li>
+            <li><a href="#services" class="hover:text-orange-400 transition-colors">QuettaGo Mini & AC Car</a></li>
+          </ul>
+        </div>
+
+        <!-- Quetta Spots -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider font-heading">Popular Hubs</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#landmarks" class="hover:text-orange-400 transition-colors">Hanna Lake & Urak</a></li>
+            <li><a href="#landmarks" class="hover:text-orange-400 transition-colors">Liaquat & Jinnah Rd</a></li>
+            <li><a href="#landmarks" class="hover:text-orange-400 transition-colors">Serena Chowk / Zarghoon</a></li>
+            <li><a href="#landmarks" class="hover:text-orange-400 transition-colors">Satellite Town & Brewery</a></li>
+            <li><a href="#landmarks" class="hover:text-orange-400 transition-colors">BUITEMS Campus</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Local Office -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider font-heading">Quetta Office</h4>
+          <div class="space-y-2.5 text-slate-400">
+            <p class="flex items-start gap-2">
+              <span class="text-orange-400 mt-0.5">📍</span>
+              <span>Musa Colony, Sariab Road, Quetta, Balochistan, Pakistan</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-orange-400">✉️</span>
+              <a href="mailto:khebar245@gmail.com" class="text-slate-300 hover:text-orange-400 transition-colors">khebar245@gmail.com</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-orange-400">📞</span>
+              <a href="tel:+923118248643" class="text-slate-300 hover:text-orange-400 transition-colors">+92 311 8248643</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-emerald-400">💬</span>
+              <a href="https://wa.me/923118248643?text=Hello%20QuettaGo%20Support!" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-semibold hover:text-emerald-300 transition-colors flex items-center gap-1">
+                <span>WhatsApp: +92 311 8248643</span>
+              </a>
+            </p>
+            <div class="pt-1 flex items-center space-x-3 text-slate-400">
+              <span class="hover:text-white cursor-pointer transition-colors" title="Facebook">FB</span>
+              <span>•</span>
+              <span class="hover:text-white cursor-pointer transition-colors" title="Instagram">IG</span>
+              <span>•</span>
+              <span class="hover:text-white cursor-pointer transition-colors" title="X / Twitter">X</span>
+              <span>•</span>
+              <span class="hover:text-white cursor-pointer transition-colors" title="LinkedIn">IN</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-xs">
+        <div>
+          © 2026 QuettaGo Technologies (Pvt) Ltd. All Rights Reserved.
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-slate-300 transition-colors">Captain Safety Policy</a>
+        </div>
+        <div class="text-slate-400 font-medium flex items-center gap-1.5">
+          <span>Crafted with</span>
+          <span class="text-red-500">❤️</span>
+          <span>for Quetta, Balochistan</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MOBILE FIXED STICKY ACTION BAR (High Conversion Bottom Bar) -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-xl border-t border-white/10 p-3 sm:hidden shadow-2xl flex items-center justify-between gap-3">
+    <div class="flex items-center gap-2.5 overflow-hidden">
+      <div class="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 shadow-md">
+        <img src="assets/images/logo.png" alt="QuettaGo Logo" class="w-full h-full object-contain">
+      </div>
+      <div class="overflow-hidden">
+        <div class="text-xs font-bold text-white truncate">QuettaGo App</div>
+        <div class="text-[10px] text-emerald-400 flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 status-indicator"></span> 100% Free on Android
+        </div>
+      </div>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.QuettaGo.app" target="_blank" rel="noopener noreferrer"
+       class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 text-white font-extrabold text-xs shadow-lg shadow-orange-600/30 shrink-0 flex items-center gap-1.5">
+      <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.235 2.235 0 0 1-.22-.971V2.785c0-.36.08-.696.219-.971zm11.3 11.3l2.671 2.672-12.72 7.345 10.049-10.017zm2.671-2.672l-2.671 2.672-10.049-10.018 12.72 7.346zm1.127 1.128l3.784 2.185a1.536 1.536 0 0 1 0 2.664l-3.784 2.185-2.83-2.517 2.83-2.517z"/></svg>
+      <span>Install App</span>
+    </a>
+  </div>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <div class="fixed bottom-20 right-4 sm:bottom-7 sm:right-7 z-50">
+    <a href="https://wa.me/923118248643?text=Hello%20QuettaGo%20Support!" target="_blank" rel="noopener noreferrer"
+       aria-label="Chat with QuettaGo on WhatsApp"
+       class="group relative flex items-center bg-[#25D366] hover:bg-[#20ba59] text-white p-3.5 sm:p-4 rounded-full shadow-2xl shadow-emerald-500/40 hover:shadow-emerald-500/60 transform hover:scale-105 active:scale-95 transition-all duration-300">
+      
+      <!-- Pulsing Beacon Dot -->
+      <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-100 border-2 border-[#25D366]"></span>
+      </span>
+
+      <!-- Official WhatsApp SVG Icon -->
+      <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-white shrink-0" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+
+      <!-- Expandable Text Label on Desktop -->
+      <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold font-heading px-0 group-hover:pl-2.5 group-hover:pr-1">
+        Chat with Support
+      </span>
+    </a>
+  </div>
+
+
+
+  <!-- Custom Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
